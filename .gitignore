@@ -1,0 +1,22 @@
+# Log di esecuzione e storico prezzi (dati volatili, non versionare)
+log/*.txt
+log/*.log
+
+# Archivi di logrotate (file con data, compressi .gz) e state file
+log/*.log-*
+log/*.log.*
+log/*.gz
+log/logrotate_btp.state
+
+# Credenziali Telegram (segreto: NON versionare)
+telegram_config.json
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Output dei report (eventuali file generati)
+report/*.csv
+report/*.html
+report/*.png
+.aider*
